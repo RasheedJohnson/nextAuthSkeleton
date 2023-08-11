@@ -48,7 +48,7 @@ export default function LoginPage() {
     <div className="flex flex-col items-center justify-center min-h-screen py-2       bg-gradient-to-bl from-black to-gray-950">
 
       {loading ? "" :  <Image src={logo} className=" mb-6 w-[60px]" alt="" /> }
-      {loading ? <Image src={ripple} alt=""/> :  <h1 className="text-2xl font-semibold">Login</h1> }
+      {loading ? <Image src={ripple} alt="" className="w-[100px]"/> :  <h1 className="text-2xl font-semibold">Login</h1> }
       <div className=" absolute w-8 h-36 bg-slate-400 opacity-20 blur-2xl mt-16 top-1/4 left-2/4"></div>
       <div className=" absolute w-36 h-16 bg-pink-300 opacity-25 blur-2xl mt-10 top-1/4 left-2/4"></div>
 
