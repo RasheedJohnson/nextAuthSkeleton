@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   // either signup or login page. Send user to Home page instead
   const path = request.nextUrl.pathname   // getting current url path
 
-  const isPublicPath = path === "/login" || path === "/signup";   // boolean
+  const isPublicPath = path === "/login" || path === "/signup" || path === "/verifyemail";   // boolean
 
   //    if no token exists assign empty string
   const token = request.cookies.get("token")?.value || "";
@@ -37,5 +37,6 @@ export const config = {
     `/profile/:path*`,
     "/login",
     "/signup",
+    "/verifyemail"
   ]
 }

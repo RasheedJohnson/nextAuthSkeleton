@@ -44,6 +44,10 @@ export default function LoginPage() {
     }
   }, [user]);
 
+
+
+
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2       bg-gradient-to-bl from-black to-gray-950">
 
@@ -54,7 +58,7 @@ export default function LoginPage() {
 
       <hr className="my-14 opacity-20 w-56" />
       
-      <label htmlFor="email"></label>
+      {/* <label htmlFor="email"></label> */}
       <input
         className="p-2 border border-gray-300 rounded-lg mb-5 focus:outline-none focus:border-gray-600 text-gray-700"
         id="email"
@@ -64,7 +68,7 @@ export default function LoginPage() {
         placeholder="email"
       />
 
-      <label htmlFor="password"></label>
+      {/* <label htmlFor="password"></label> */}
       <input
         className="p-2 border border-gray-300 rounded-lg mb-12 focus:outline-none focus:border-gray-600 text-gray-700"
         id="password"
